@@ -183,8 +183,9 @@ section {
 }
 
 .section-titles {
-  font-size: 1.1rem;
-  font-weight: 400;
+  font-size: 1.3rem;
+  font-weight: 500;
+  padding-bottom: 1rem;
 }
 
 #projects-container {
@@ -195,4 +196,57 @@ section {
 
 .section-titles:first-child {
   grid-column: span 2;
+}
+
+.trending-pic {
+  width: 50px;
+}
+
+.trending-subtext {
+  color: #636363;
+}
+
+hr {
+  border-bottom: 1px solid #ccc;
+}
+
+.aside-cards {
+  background-color: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aside-cards::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 1px; /* Adjust the width as needed */
+  height: 100%;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.1), transparent);
+}
+
+#announcement-card {
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+.announcement-card-titles {
+  font-weight: 500;
+  padding-bottom: 0.2rem;
+}
+
+.announcement-card-texts {
+  font-size: 0.8rem;
+  color: #888;
+}
+
+#trending-card {
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  row-gap: 1rem;
 }
